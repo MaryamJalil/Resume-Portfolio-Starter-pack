@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const Portfolio = ({ data }) => {
   if (data) {
     var projects = data.projects.map(function (projects) {
-      var projectImage = "images/portfolio/" + projects.image;
+      var projectImage = projects.image;
       return (
         <div key={projects.title} className="columns portfolio-item">
           <div className="item-wrap">

@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const About = ({ data }) => {
   if (data) {
     var name = data.name;
-    var profilepic = "images/" + data.image;
+    var profilepic = 'images/' + data.image;
     var bio = data.bio;
     var street = data.address.street;
     var city = data.address.city;
@@ -21,7 +21,7 @@ const About = ({ data }) => {
           <img
             className="profile-pic"
             src={profilepic}
-            alt="Sonny's Profile Pic"
+            alt="Maryam's Profile Pic"
           />
         </div>
         <div className="nine columns main-col">

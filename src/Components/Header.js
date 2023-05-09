@@ -1,5 +1,5 @@
-import React from "react";
-import TypeWriter from "react-typewriter";
+import React from 'react';
+import TypeWriter from 'react-typewriter';
 
 const Header = ({ data }) => {
   if (data) {
@@ -21,10 +21,18 @@ const Header = ({ data }) => {
   return (
     <header id="home">
       <nav id="nav-wrap">
-        <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
+        <a
+          className="mobile-btn"
+          href="#nav-wrap"
+          title="Show navigation"
+        >
           Show navigation
         </a>
-        <a className="mobile-btn" href="#home" title="Hide navigation">
+        <a
+          className="mobile-btn"
+          href="#home"
+          title="Hide navigation"
+        >
           Hide navigation
         </a>
 
@@ -50,6 +58,11 @@ const Header = ({ data }) => {
             </a>
           </li>
           <li>
+            <a className="smoothscroll" href="#achievements">
+              Achievements
+            </a>
+          </li>
+          <li>
             <a className="smoothscroll" href="#testimonials">
               Testimonials
             </a>
@@ -65,7 +78,9 @@ const Header = ({ data }) => {
       <div className="row banner">
         <div className="banner-text">
           <h1 className="responsive-headline">
-            <TypeWriter typing={0.5}>{name ? `I'm ${name}.` : null}</TypeWriter>
+            <TypeWriter typing={0.5}>
+              {name ? `I'm ${name}.` : null}
+            </TypeWriter>
           </h1>
           <h3>
             Based in {city}. <span>{occupation}</span>. {description}.
